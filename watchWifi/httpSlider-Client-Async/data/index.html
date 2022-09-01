@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+  <script src='script.js'></script>
+  <script>
+    var update = function(v){
+      loadFile("./bright?v=" + v, function(res){console.log(res)});
+    }
+  </script>
+</head>
+
+<body>
+<input id='theSlider' type='range' min=0 max=100 oninput='update(this.value)'>
+</body>
+
+</html>

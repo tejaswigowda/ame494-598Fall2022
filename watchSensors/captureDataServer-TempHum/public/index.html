@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<script src='asyncReq.js'></script>
+<script>
+function updateData()
+{
+  loadURL("./getData", function(data){
+    document.getElementById("results").innerHTML = data;
+  })
+}
+function start()
+{
+  setInterval("updateData()", 300);
+}
+</script>
+</head>
+<body onload='start()'>
+<h1> Temperature/Humidity</h1>
+<div id='results'> </div>
+</body>
+</html>
