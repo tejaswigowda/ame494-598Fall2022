@@ -4,7 +4,7 @@
 
 ## Tasks
 
-Using the watch hello world example https://github.com/tejaswigowda/ame494-598-Fall2022/blob/master/HelloWorldWatch/helloWorld/helloWorld.ino  print your name on the watch screen.
+Using the watch hello world example https://github.com/tejaswigowda/ame494-598Fall2022/blob/main/HelloWorldWatch/helloWorld/helloWorld.ino  print your name on the watch screen.
 
 
 ## Grading
