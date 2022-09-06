@@ -29,6 +29,8 @@ void loop()
             Serial.print(i + 1);
             Serial.print(": ");
             Serial.print(WiFi.SSID(i));
+            Serial.print(": ");
+            Serial.print(WiFi.BSSIDstr(i));
             Serial.print(" (");
             Serial.print(WiFi.RSSI(i));
             Serial.print(")");
