@@ -36,14 +36,15 @@ void setup() {
   Serial.println("Timer set to 5 seconds (timerDelay variable), it will take 5 seconds before publishing the first reading.");
 }
 
+bool everSuccessful = false;
+
 void loop() {
-  if ((millis() - lastTime) > timerDelay) {
+  if ((millis() - lastTime) > timerDelay && !everSuccessful) {
     //Check WiFi connection status
     if(WiFi.status()== WL_CONNECTED){
               
       response = httpGETRequest(serverName);
       Serial.println(response);
-
     }
     else {
       Serial.println("WiFi Disconnected");
@@ -66,6 +67,9 @@ String httpGETRequest(const char* serverName) {
   if (httpResponseCode>0) {
     Serial.print("HTTP Response code: ");
     Serial.println(httpResponseCode);
+    if(httpResponseCode == 200){
+      everSuccessful = true;
+    }
     payload = http.getString();
   }
   else {
