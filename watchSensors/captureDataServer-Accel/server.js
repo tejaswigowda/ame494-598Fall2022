@@ -5,7 +5,7 @@ var errorHandler = require('errorhandler');
 var methodOverride = require('method-override');
 var MS = require("mongoskin");
 var hostname = process.env.HOSTNAME || 'localhost';
-var port = 1234;
+var port = 8080;
 
 var accX, accY, accZ;
 
