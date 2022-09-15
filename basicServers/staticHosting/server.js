@@ -8,6 +8,7 @@ server.get("/", function (req, res) {
     res.redirect("index.html")
 });
 
+
 server.use(bodyParser());
 server.use(express.static(__dirname + '/public'));
 

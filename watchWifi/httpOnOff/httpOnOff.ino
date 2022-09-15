@@ -4,7 +4,7 @@
 
 TTGOClass *ttgo;
 
-char * HOSTNAME = "testing-ame520";
+char * HOSTNAME = "testing-ame";
 char * WifiPASS = "12345678";
 
 #include <WiFi.h>

@@ -15,7 +15,7 @@ const char* ssid = "AMEIoT";
 const char* password = "ameclass";
 
 //Your Domain name with URL path or IP address with path
-const char* serverName = "http://192.168.2.14:3000/sendData";
+const char* serverName = "http://54.152.107.229:8080/sendData";
 
 // the following variables are unsigned longs because the time, measured in
 // milliseconds, will quickly become a bigger number than can be stored in an int.
@@ -23,7 +23,7 @@ unsigned long lastTime = 0;
 // Timer set to 10 minutes (600000)
 //unsigned long timerDelay = 600000;
 // Set timer to 5 seconds (5000)
-unsigned long timerDelay = 10;
+unsigned long timerDelay = 1000;
 
 String response;
 
