@@ -24,6 +24,7 @@ app.get("/sendData", function (req, res) {
     console.log(accX, accY, accZ);
 
    db.collection("data").insert(req.query, function(result, err){
+       console.log(result, err);
     res.send("1");
    });
 });
