@@ -9,7 +9,7 @@ var port = 8080;
 
 var accX, accY, accZ;
 
-//var db = MS.db("mongodb://13.56.213.25:27017/sensorData");
+var db = MS.db("mongodb://127.0.0.1:27017/sensorData");
 
 app.get("/", function (req, res) {
     res.redirect("index.html")
@@ -23,9 +23,9 @@ app.get("/sendData", function (req, res) {
     
     console.log(accX, accY, accZ);
 
-  //  db.collection("data").insert(req.query, function(result, err){
+   db.collection("data").insert(req.query, function(result, err){
     res.send("1");
-  //  });
+   });
 });
 
 
