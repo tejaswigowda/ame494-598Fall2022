@@ -4,8 +4,8 @@
 
 
 
-const char* ssid = "iPhone";
-const char* password = "password";
+const char* ssid = "NETGEAR31";
+const char* password = "fluffywind2904";
 
 //Your Domain name with URL path or IP address with path
 const char* serverName = "http://www.google.com/";
