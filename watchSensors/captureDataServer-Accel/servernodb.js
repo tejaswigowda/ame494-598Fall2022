@@ -19,7 +19,6 @@ app.get("/sendData", function (req, res) {
     accZ = req.query.z
     req.query.time = new Date().getTime();
     console.log(req.query, new Date());
-   });
 });
 
 
