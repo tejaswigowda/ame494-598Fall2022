@@ -4,6 +4,7 @@ const WebSocket = require('ws')
 var cors = require('cors');
 
 var lts = {};
+express.static.mime.define({'application/octet-stream': ['csv']})
 
 const wss = new WebSocket.Server({ port: 3000})
 var count = 0;
