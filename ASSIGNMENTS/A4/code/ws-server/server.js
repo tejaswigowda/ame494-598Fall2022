@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 const WebSocket = require('ws')
+var cors = require('cors');
+
 var lts = {};
 
 const wss = new WebSocket.Server({ port: 3000})
@@ -25,4 +27,5 @@ app.get("/getLatest", function(req,res){
 });
 
 
+app.use(cors())
 app.listen(8080);
