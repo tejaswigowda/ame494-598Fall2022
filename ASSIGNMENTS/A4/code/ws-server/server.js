@@ -23,7 +23,7 @@ wss.on('connection', ws => {
 
 app.use(cors())
 
-app.get("/getLatest", function(req,res){
+app.get("/getLatest.csv", function(req,res){
     var csv = "Time, X, Y, Z \n";
     csv += new Date().toJSON() + "," + lts.x + "," + lts.y + "," + lts.z + "\n";
     res.header("Access-Control-Allow-Origin", "*");
