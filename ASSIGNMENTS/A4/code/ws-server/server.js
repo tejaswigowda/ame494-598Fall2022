@@ -20,7 +20,7 @@ wss.on('connection', ws => {
 
 app.get("/getLatest", function(req,res){
     var csv = "Time, X, Y, Z \n";
-    csv += lts.x + "," + lts.y + "," + lts.z + "\n";
+    csv += new Date(lts.time).toString() + "," + lts.x + "," + lts.y + "," + lts.z + "\n";
 	res.end(csv);
 });
 
