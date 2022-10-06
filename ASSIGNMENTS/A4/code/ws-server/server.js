@@ -7,7 +7,12 @@ const wss = new WebSocket.Server({ port: 3000})
 var count = 0;
 wss.on('connection', ws => {
   ws.on('message', message => {
-	  lts = message;
+	try{  
+      lts = JSON.parse(message);
+    }
+    catch(e){
+      console.log(e);
+    }
 	console.log(count, message, new Date());count++;
 	var x = `${message}`;
   })
