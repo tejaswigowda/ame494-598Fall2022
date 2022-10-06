@@ -13,7 +13,7 @@ wss.on('connection', ws => {
   })
 })
 
-app.get("getLatest", function(req,res){
+app.get("/getLatest", function(req,res){
 	res.end(JSON.stringify(lts));
 });
 
