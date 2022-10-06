@@ -20,6 +20,8 @@ wss.on('connection', ws => {
   })
 })
 
+app.use(cors())
+
 app.get("/getLatest", function(req,res){
     var csv = "Time, X, Y, Z \n";
     csv += new Date().toJSON() + "," + lts.x + "," + lts.y + "," + lts.z + "\n";
@@ -27,5 +29,4 @@ app.get("/getLatest", function(req,res){
 });
 
 
-app.use(cors())
 app.listen(8080);
