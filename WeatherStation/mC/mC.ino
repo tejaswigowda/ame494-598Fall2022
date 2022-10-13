@@ -9,7 +9,7 @@ TTGOClass *ttgo;
 
 
 const char* ssid = "NETGEAR18";
-const char* password = "freshsocks43";
+const char* password = "freshsocks437";
 
 //Your Domain name with URL path or IP address with path
 const char* serverName = "http://192.168.0.195:1234/setValue";
