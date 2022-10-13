@@ -8,8 +8,8 @@ TTGOClass *ttgo;
 #include <HTTPClient.h>
 
 
-const char* ssid = "";
-const char* password = "";
+const char* ssid = "NETGEAR18";
+const char* password = "freshsocks43";
 
 //Your Domain name with URL path or IP address with path
 const char* serverName = "http://192.168.0.195:1234/setValue";
@@ -20,7 +20,7 @@ unsigned long lastTime = 0;
 // Timer set to 10 minutes (600000)
 //unsigned long timerDelay = 600000;
 // Set timer to 5 seconds (5000)
-unsigned long timerDelay = 300;
+unsigned long timerDelay = 5000;
 
 String response;
 
