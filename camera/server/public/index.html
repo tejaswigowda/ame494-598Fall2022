@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body style="background:black;margin:0;overflow:hidden">
+	<div class="main_content">
+		<div class="tcenter">
+			<canvas style='width:100vw;height:100vh' id="canvas">
+			</canvas>
+		</div>
+	</div>
+	
+	<script>
+	var portStr=":"+location.port;
+	var protocolStr="ws";
+	if (location.protocol === 'https:') {
+		protocolStr="wss";
+	}
+	 console.log(protocolStr+'://' + location.hostname + portStr+"/jpgstream_client");
+	var ws = new WebSocket(protocolStr+'://' + location.hostname + portStr+"/jpgstream_client");	
+	var canvas = document.getElementById('canvas');
+	var ctx = canvas.getContext('2d');
+	
+	var img = new Image();
+	img.onload = function() {
+	//		canvas.style.width=this.width+'px';
+	//		canvas.style.height=this.height+'px';
+			ctx.drawImage(this, 0, 0, this.width,    this.height,     // source rectangle
+                   0, 0, canvas.width, canvas.height); // destination rectangle
+
+
+	}
+	
+	ws.onmessage = function(message) {	
+		var url = URL.createObjectURL(message.data);
+		img.src = url;		
+	};
+
+
+  setInterval("location.reload()",1000*60);
+    
+  
+	</script>
+</body>
+</html>
