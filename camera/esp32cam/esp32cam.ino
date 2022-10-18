@@ -427,7 +427,7 @@ void setupNetwork()
 #ifdef SOFTAP_MODE
     WiFi.mode(WIFI_AP);
     macAddress += WiFi.softAPmacAddress().substring(0, 5);
-    WiFi.softAP(macAddress.c_str());
+    WiFi.softAP(WIFI_SSID, WIFI_PASSWD);
     ipAddress = WiFi.softAPIP().toString();
 #else
     WiFi.begin(WIFI_SSID, WIFI_PASSWD);
