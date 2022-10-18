@@ -21,8 +21,8 @@
 /***************************************
  *  WiFi
  **************************************/
-#define WIFI_SSID   "NETGEAR31"
-#define WIFI_PASSWD "fluffywind2904"
+#define WIFI_SSID   "test"
+#define WIFI_PASSWD "12345678"
 
 
 unsigned long sendInterval = 1;
@@ -36,7 +36,7 @@ String mac_address;
 /***************************************
  *  Function
  **************************************/
-// #define SOFTAP_MODE       //The comment will be connected to the specified ssid
+ #define SOFTAP_MODE       //The comment will be connected to the specified ssid
 
 //When there is BME280, set the reading time here
 #define DEFAULT_MEASUR_MILLIS   3000        /* Get sensor time by default (ms)*/
