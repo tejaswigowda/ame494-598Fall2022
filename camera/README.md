@@ -1,5 +1,5 @@
-# esp32-camera-websockets
+# esp32-camera
 
 ## Requirements
 
-https://github.com/Links2004/arduinoWebSockets 
+https://github.com/Xinyuan-LilyGO/CH9102_Mac_Driver
