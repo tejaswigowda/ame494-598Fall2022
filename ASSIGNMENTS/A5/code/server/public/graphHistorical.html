@@ -56,8 +56,6 @@ function updateData(){
 	}
 	loadFile(url, callback);
 
-
-	setInterval("getDataFromServer()", 1000);
 }
 
 
@@ -67,8 +65,8 @@ function updateData(){
 <body style='text-align:center; font-family:Helvetica' onload='start()'>
 	<h1> Weather Historical Data </h1>
 
-	<input id='datetimeSelect' type='text'>
-	<select id='duration'>
+	<input id='datetimeSelect' type='text' onchange='updateData()'>
+	<select id='duration' onchange='updateData()'>
 		<option value='10'> last 10 mins </option>
 		<option value='30'> last 30 mins </option>
 		<option value='60'> last hour </option>
