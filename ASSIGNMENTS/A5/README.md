@@ -1,6 +1,6 @@
-#Assignment 5
+# Assignment 5
 
-**Due Oct 25th before class**
+**Due Oct 27th before class**
 
 ## Task
 Starting with the code handout modify the `graphHistorical.html` so that
