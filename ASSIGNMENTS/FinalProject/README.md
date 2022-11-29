@@ -15,12 +15,12 @@ This paper will be a written description of the evolution and final achievements
 - What is the design gap? What you set out to do vs. what you ended up ACTUALLY doing?
 
 Reflect upon feedback you may receive in class.
-- In addition, please address the following:
+In addition, please address the following:
 - How have the readings and workshops in class influenced your work?
 - Has the work in class shifted the way you envision your research goals?
 - What are your plans for your future research?
 
-## GitHub Repo (10 points -- Final)
+## GitHub Repo (10 points -- Final) - due December 7th
 
 - Basic github: http://tejaswigowda.com/github-basics/ 
 - For big files use: https://git-lfs.github.com/ 
