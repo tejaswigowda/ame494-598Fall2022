@@ -20,13 +20,13 @@ Reflect upon feedback you may receive in class.
 - Has the work in class shifted the way you envision your research goals?
 - What are your plans for your future research?
 
-## GitHub Repo (10 points -- final)
+## GitHub Repo (10 points -- Final)
 
 - Basic github: http://tejaswigowda.com/github-basics/ 
 - For big files use: https://git-lfs.github.com/ 
 - For GH markdown reference: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github
 
-## Examples:
+### Examples:
 
 - https://github.com/jjliska/capstone/
 - https://github.com/googlecreativelab/open-nsynth-super 
