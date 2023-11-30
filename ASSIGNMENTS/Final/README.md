@@ -12,4 +12,3 @@ all the data-points displayed.
 
 Example done in class:
 - https://github.com/tejaswigowda/ame494-598Fall2022/tree/main/WeatherStation
-- Assignment 7.
