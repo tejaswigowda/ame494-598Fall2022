@@ -11,4 +11,5 @@ all the data-points displayed.
 ## Reference
 
 Example done in class:
-- https://github.com/tejaswigowda/ame494-598Fall2022/tree/main/WeatherStation
+- https://github.com/tejaswigowda/ame498-598Fall2023/tree/main/WeatherStation
+
