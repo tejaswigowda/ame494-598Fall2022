@@ -1,6 +1,6 @@
 # Final
 
-**Due Dec 3rd midnight**
+** Due Dec 3rd midnight **
 
 ## Task
 Starting with the code handout (`./code`) modify the `graphHistorical.html` so that
