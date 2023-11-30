@@ -1,0 +1,36 @@
+<html>
+<head>
+<script src='asyncReq.js'></script>
+<script>
+function getDataFromServer()
+{
+	var url = "./getValue"
+	var callback = function(data){
+		console.log(data, typeof data);
+		var args = data.split(" ");
+		console.log(args);
+		var t = parseFloat(args[0]) * 1.8 + 32;
+		var h = args[1];
+		var time = args[2];
+
+		var output =
+		"<h2> Temperature </h2> <p>" + t + " &deg; F</p>"+
+		"<h2> Humidity </h2> <p>" + h + " %</p>"+
+		"<p> at " + new Date(parseInt(time)) + "</p>";
+
+		document.getElementById("data").innerHTML = output;
+
+	}
+	loadFile(url, callback);
+}
+
+
+</script>
+</head>
+
+<body style='text-align:center; font-family:Helvetica' onload='setInterval("getDataFromServer()", 1000)'>
+	<h1> Weather </h1>
+	<div id='data'></div>
+
+</body>
+</html>
